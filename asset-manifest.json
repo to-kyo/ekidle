@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ekidle/static/css/main.cf6eadd7.css",
+    "main.js": "/ekidle/static/js/main.883f42d6.js",
+    "static/js/787.af6a8572.chunk.js": "/ekidle/static/js/787.af6a8572.chunk.js",
+    "index.html": "/ekidle/index.html",
+    "main.cf6eadd7.css.map": "/ekidle/static/css/main.cf6eadd7.css.map",
+    "main.883f42d6.js.map": "/ekidle/static/js/main.883f42d6.js.map",
+    "787.af6a8572.chunk.js.map": "/ekidle/static/js/787.af6a8572.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf6eadd7.css",
+    "static/js/main.883f42d6.js"
+  ]
+}
