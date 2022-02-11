@@ -9,7 +9,7 @@ import {
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
-import { Keyboard } from './components/keyboard/Keyboard'
+// import { NihongoKeyboard } from './components/keyboard/NihongoKeyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
@@ -134,19 +134,29 @@ function App() {
     }
   }, [isGameWon, isGameLost])
 
-  const onChar = (value: string) => {
+  // const onChar = (value: string) => {
+  //   if (
+  //     currentGuess.length < MAX_WORD_LENGTH &&
+  //     guesses.length < MAX_CHALLENGES &&
+  //     !isGameWon
+  //   ) {
+  //     setCurrentGuess(`${currentGuess}${value}`)
+  //   }
+  // }
+
+  const onText = (value: string) => {
     if (
-      currentGuess.length < MAX_WORD_LENGTH &&
+      value.length <= MAX_WORD_LENGTH &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
-      setCurrentGuess(`${currentGuess}${value}`)
+      setCurrentGuess(value)
     }
   }
 
-  const onDelete = () => {
-    setCurrentGuess(currentGuess.slice(0, -1))
-  }
+  // const onDelete = () => {
+  //   setCurrentGuess(currentGuess.slice(0, -1))
+  // }
 
   const onEnter = () => {
     if (isGameWon || isGameLost) {
@@ -248,13 +258,8 @@ function App() {
         guesses={guesses}
         currentGuess={currentGuess}
         isRevealing={isRevealing}
-      />
-      <Keyboard
-        onChar={onChar}
-        onDelete={onDelete}
+        onText={onText}
         onEnter={onEnter}
-        guesses={guesses}
-        isRevealing={isRevealing}
       />
       <InfoModal
         isOpen={isInfoModalOpen}
