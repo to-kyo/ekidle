@@ -10,41 +10,41 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        駅名を当てるゲームです。
+        入力した答えに応じてタイルの色が変わり、文字が合っているかわかります。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="と" status="correct" />
+        <Cell value="う" />
+        <Cell value="き" />
+        <Cell value="ょ" />
+        <Cell value="う" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        "と"が正解の駅名に含まれていて、かつ位置も合っています。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell value="L" status="present" />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="し" />
+        <Cell value="ん" />
+        <Cell value="じ" status="present" />
+        <Cell value="ゅ" />
+        <Cell value="く" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        "じ"が正解の駅名に含まれていますが、位置は合っていません。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="い" />
+        <Cell value="け" />
+        <Cell value="ぶ" />
+        <Cell value="く" status="absent" />
+        <Cell value="ろ" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        "く"が正解の駅名に含まれません。
       </p>
     </BaseModal>
   )
