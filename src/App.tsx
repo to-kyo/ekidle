@@ -258,11 +258,8 @@ function App() {
         guesses={guesses}
         currentGuess={currentGuess}
         isRevealing={isRevealing}
-      />
-      <NihongoKeyboard
         onText={onText}
         onEnter={onEnter}
-        guessIsEmpty={currentGuess === ''}
       />
       <InfoModal
         isOpen={isInfoModalOpen}
