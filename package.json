@@ -59,5 +59,6 @@
   },
   "lint-staged": {
     "src/*.{ts,tsx,js,jsx,css,md}": "prettier --write"
-  }
+  },
+  "homepage": "https://to-kyo.github.io/ekidle"
 }
