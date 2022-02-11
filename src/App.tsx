@@ -134,15 +134,15 @@ function App() {
     }
   }, [isGameWon, isGameLost])
 
-  const onChar = (value: string) => {
-    if (
-      currentGuess.length < MAX_WORD_LENGTH &&
-      guesses.length < MAX_CHALLENGES &&
-      !isGameWon
-    ) {
-      setCurrentGuess(`${currentGuess}${value}`)
-    }
-  }
+  // const onChar = (value: string) => {
+  //   if (
+  //     currentGuess.length < MAX_WORD_LENGTH &&
+  //     guesses.length < MAX_CHALLENGES &&
+  //     !isGameWon
+  //   ) {
+  //     setCurrentGuess(`${currentGuess}${value}`)
+  //   }
+  // }
 
   const onText = (value: string) => {
     if (
@@ -154,9 +154,9 @@ function App() {
     }
   }
 
-  const onDelete = () => {
-    setCurrentGuess(currentGuess.slice(0, -1))
-  }
+  // const onDelete = () => {
+  //   setCurrentGuess(currentGuess.slice(0, -1))
+  // }
 
   const onEnter = () => {
     if (isGameWon || isGameLost) {
