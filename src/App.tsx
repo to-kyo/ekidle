@@ -9,7 +9,7 @@ import {
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
-import { NihongoKeyboard } from './components/keyboard/NihongoKeyboard'
+// import { NihongoKeyboard } from './components/keyboard/NihongoKeyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
