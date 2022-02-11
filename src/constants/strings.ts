@@ -4,7 +4,8 @@ export const WIN_MESSAGES = ['おめでとう🚉', '正解です🚃', 'すば�
 export const GAME_COPIED_MESSAGE = '結果をコピーしました'
 export const ABOUT_GAME_MESSAGE = 'このゲームについて'
 export const NOT_ENOUGH_LETTERS_MESSAGE = '文字数が足りません'
-export const WORD_NOT_FOUND_MESSAGE = '駅名が違うようです(💡東京都の駅名をひらがなで入力してください)'
+export const WORD_NOT_FOUND_MESSAGE =
+  '駅名が違うようです(💡東京都の駅名をひらがなで入力してください)'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `正解は ${solution} でした🚉`
 export const ENTER_TEXT = 'Enter'

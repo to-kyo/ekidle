@@ -25,7 +25,9 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
         knownLetterSet.add(guess[i])
       }
       if (statuses[i] === 'correct' && word[i] !== guess[i]) {
-        return `ハードモードで遊んでいます：「${guess[i]}」を${i + 1}番目の文字にしてください`
+        return `ハードモードで遊んでいます：「${guess[i]}」を${
+          i + 1
+        }番目の文字にしてください`
       }
     }
   }

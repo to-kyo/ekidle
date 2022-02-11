@@ -12,7 +12,13 @@ type Props = {
   onEnter: () => void
 }
 
-export const Grid = ({ guesses, currentGuess, isRevealing, onText, onEnter }: Props) => {
+export const Grid = ({
+  guesses,
+  currentGuess,
+  isRevealing,
+  onText,
+  onEnter,
+}: Props) => {
   const empties =
     guesses.length < MAX_CHALLENGES - 1
       ? Array.from(Array(MAX_CHALLENGES - 1 - guesses.length))
