@@ -1,3 +1,4 @@
+// 日本語の入力処理は https://github.com/motemen/kanjile を参考にさせていただきました
 import classNames from 'classnames'
 import { ChangeEvent, FormEvent, useEffect, useRef } from 'react'
 import { MAX_WORD_LENGTH } from '../../constants/settings'
