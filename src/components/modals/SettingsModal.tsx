@@ -19,15 +19,15 @@ export const SettingsModal = ({
   handleDarkMode,
 }: Props) => {
   return (
-    <BaseModal title="Settings" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="設定" isOpen={isOpen} handleClose={handleClose}>
       <div className="grid-cols-2 gap-4">
         <SettingsToggle
-          settingName="Hard Mode"
+          settingName="ハードモード"
           flag={isHardMode}
           handleFlag={handleHardMode}
         />
         <SettingsToggle
-          settingName="Dark Mode"
+          settingName="ダークモード"
           flag={isDarkMode}
           handleFlag={handleDarkMode}
         />
