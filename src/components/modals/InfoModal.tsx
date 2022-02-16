@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="あそびかた" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        駅名を当てるゲームです。いまのところ、東京都にある駅に対応しています。
+        駅名を当てるゲームです。いまのところ、広島県にある駅に対応しています。
         入力した答えに応じてタイルの色が変わり、文字が合っているかわかります。
       </p>
 
