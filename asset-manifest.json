@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ekidle/static/css/main.124a9248.css",
-    "main.js": "/ekidle/static/js/main.71961e7c.js",
+    "main.js": "/ekidle/static/js/main.c88060f1.js",
     "static/js/787.af6a8572.chunk.js": "/ekidle/static/js/787.af6a8572.chunk.js",
     "index.html": "/ekidle/index.html",
     "main.124a9248.css.map": "/ekidle/static/css/main.124a9248.css.map",
-    "main.71961e7c.js.map": "/ekidle/static/js/main.71961e7c.js.map",
+    "main.c88060f1.js.map": "/ekidle/static/js/main.c88060f1.js.map",
     "787.af6a8572.chunk.js.map": "/ekidle/static/js/787.af6a8572.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.124a9248.css",
-    "static/js/main.71961e7c.js"
+    "static/js/main.c88060f1.js"
   ]
 }
